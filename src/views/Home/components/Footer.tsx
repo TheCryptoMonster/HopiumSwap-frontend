@@ -110,8 +110,8 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://docs.pancakeswap.finance/">
-          {t('Learn how to start')}
+        <Link external href="https://t.me/HopiumSwapExchange">
+          {t('HopiumSwap Telegram Group')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}
       </Wrapper>
