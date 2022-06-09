@@ -86,7 +86,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const usersQuery = gql`
     query userCount($since: ISO8601DateTime, $till: ISO8601DateTime) {
       ethereum(network: bsc) {
-        dexTrades(exchangeName: { in: ["Pancake", "Pancake v2"] }, date: { since: $since, till: $till }) {
+        dexTrades(exchangeName: { in: ["Hopium", "Hopium v2"] }, date: { since: $since, till: $till }) {
           count(uniq: senders)
         }
       }
