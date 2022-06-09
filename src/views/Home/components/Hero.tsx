@@ -109,7 +109,7 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of Hopium.')}
+            {t('Crypto Is Made Of Hopium.')}
           </Heading>
           <Heading scale="md" mb="24px">
             {t('Trade, earn, and win crypto on the newest decentralized platform on the polygon network! .')}
