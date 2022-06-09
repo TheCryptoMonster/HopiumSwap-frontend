@@ -54,16 +54,16 @@ function MyApp(props: AppProps) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover HopiumSwap, the leading DEX on Polygon Smart Chain  with the best farms in DeFi and a lottery for HOPE."
+          content="Do You Want Less Fees? Discover HopiumSwap, the leading DEX on Polygon Smart Chain  with the best farms in DeFi and a lottery for HOPE."
         />
         <meta name="theme-color" content="#1FC7D4" />
         <meta name="twitter:image" content="https://twitter.com/HopiumSwap/header_photo" />
         <meta
           name="twitter:description"
-          content="The most popular AMM on Polygon! Earn CAKE through yield farming or win it in the Lottery, then stake it in Hopium Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by HoopiumSwap), NFTs, and more, on a platform you can trust."
+          content="The most popular AMM on Polygon! Earn CAKE through yield farming or win it in the Lottery, then stake it in Hopium Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by HopiumSwap), NFTs, and more, on a platform you can trust."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="🥞 HopiumSwap - A next evolution DeFi exchange on Polygon Smart Chain." />
+        <meta name="twitter:title" content="" HopiumSwap - A next evolution DeFi exchange on Polygon Smart Chain." />
         <title>HopiumSwap</title>
       </Head>
       <Providers store={store}>
