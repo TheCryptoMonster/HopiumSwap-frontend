@@ -8,15 +8,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.pancakeswap.finance/contact-us",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com/",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Community",
-        href: "https://docs.pancakeswap.finance/contact-us/telegram",
+        href: "https://t.me/HopiumSwapExchange",
       },
       {
         label: "CAKE",
@@ -27,7 +27,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Online Store",
-        href: "https://pancakeswap.creator-spring.com/",
+        href: "https://t.me/HopiumSwapExchange",
         isHighlighted: true,
       },
     ],
@@ -37,7 +37,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://docs.pancakeswap.finance/contact-us/customer-support",
+        href: "Support https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Troubleshooting",
@@ -54,11 +54,11 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/TheCryptoMonster",
       },
       {
         label: "Documentation",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://github.com/TheCryptoMonsterance",
       },
       {
         label: "Bug Bounty",
@@ -70,7 +70,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Careers",
-        href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
+        href: "https://t.me/HopiumSwapExchange",
       },
     ],
   },
@@ -80,7 +80,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/home",
   },
   {
     label: "Telegram",
