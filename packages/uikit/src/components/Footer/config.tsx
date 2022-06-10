@@ -8,7 +8,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://www.s0cialhub.com/HopiumSwapExchange",
+        href: "https://twitter.com/HopiumSwap",
       },
       {
         label: "Blog",
@@ -16,7 +16,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Community",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://twitter.com/HopiumSwap",
       },
       {
         label: "CAKE",
@@ -27,7 +27,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Online Store",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://twitter.com/HopiumSwap",
         isHighlighted: true,
       },
     ],
@@ -37,15 +37,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://www.s0cialhub.com/HopiumSwapExchange",
+        href: "Support https://twitter.com/HopiumSwap",
       },
       {
         label: "Troubleshooting",
-        href: "https://docs.pancakeswap.finance/help/troubleshooting",
+        href: "https://twitter.com/HopiumSwap",
       },
       {
         label: "Guides",
-        href: "https://docs.pancakeswap.finance/get-started",
+        href: "https://twitter.com/HopiumSwap",
       },
     ],
   },
@@ -58,11 +58,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://github.com/TheCryptoMonsterance",
+        href: "https://github.com/TheCryptoMonster",
       },
       {
         label: "Bug Bounty",
-        href: "https://app.gitbook.com/@pancakeswap-1/s/pancakeswap/code/bug-bounty",
+        href: "https://twitter.com/HopiumSwap",
       },
       {
         label: "Audits",
@@ -70,7 +70,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Careers",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://twitter.com/HopiumSwap",
       },
     ],
   },
