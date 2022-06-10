@@ -80,7 +80,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/home",
+    href: "https://twitter.com/HopiumSwap",
   },
   {
     label: "Telegram",
