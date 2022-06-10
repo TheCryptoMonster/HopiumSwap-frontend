@@ -156,22 +156,22 @@ export const socials = [
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "https://instagram.com/pancakeswap_official",
+    href: "https://discord.gg/qARSZRXYNR",
   },
   {
     label: "Github",
     icon: GithubIcon,
-    href: "https://github.com/pancakeswap/",
+    href: "https://github.com/TheCryptoMonster/",
   },
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/pancakeswap",
+    href: "https://discord.gg/qARSZRXYNR",
   },
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://pancakeswap.medium.com/",
+    href: "https://discord.gg/qARSZRXYNR",
   },
 ];
 
