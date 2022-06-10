@@ -88,7 +88,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/HopiumSwapExchange",
       },
       {
         label: "Bahasa Indonesia",
