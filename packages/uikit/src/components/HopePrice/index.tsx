@@ -1,2 +1,2 @@
-export { default as CakePrice } from "./CakePrice";
-export type { Props as CakePriceProps } from "./CakePrice";
+export { default as HopePrice } from "./HopePrice";
+export type { Props as HopePriceProps } from "./HopePrice";
