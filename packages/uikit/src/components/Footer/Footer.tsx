@@ -14,7 +14,7 @@ import {
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
-import CakePrice from "../CakePrice/CakePrice";
+import CakePrice from "../HopePrice/HopePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
@@ -26,8 +26,8 @@ const MenuItem: React.FC<FooterProps> = ({
   currentLang,
   langs,
   setLang,
-  cakePriceUsd,
-  buyCakeLabel,
+  hopePriceUsd,
+  buyHopeLabel,
   ...props
 }) => {
   return (
@@ -87,7 +87,7 @@ const MenuItem: React.FC<FooterProps> = ({
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
-              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
+              <HopePrice hopePriceUsd={hopePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
             <Button
               as="a"
@@ -96,7 +96,7 @@ const MenuItem: React.FC<FooterProps> = ({
               scale="sm"
               endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
             >
-              {buyCakeLabel}
+              {buyHopeLabel}
             </Button>
           </Flex>
         </StyledToolsContainer>
