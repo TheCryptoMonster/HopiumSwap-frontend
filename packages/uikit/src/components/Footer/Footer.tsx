@@ -26,7 +26,7 @@ const MenuItem: React.FC<FooterProps> = ({
   currentLang,
   langs,
   setLang,
-  hopePriceUsd,
+  HopePriceUsd,
   buyHopeLabel,
   ...props
 }) => {
