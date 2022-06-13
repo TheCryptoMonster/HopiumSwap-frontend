@@ -72,7 +72,7 @@ const Menu: React.FC<NavProps> = ({
   toggleTheme,
   currentLang,
   setLang,
-  HopePriceUsd,
+  hopePriceUsd,
   links,
   subLinks,
   footerLinks,
