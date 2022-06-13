@@ -27,7 +27,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Online Store",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://t.me/HopiumSwapExchange",
         isHighlighted: true,
       },
     ],
@@ -37,11 +37,11 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://twitter.com/HopiumSwap",
+        href: "Support https://t.me/HopiumSwapExchange",
       },
       {
         label: "Troubleshooting",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://t.me/HopiumSwapExchange",
       },
       {
         label: "Guides",
@@ -62,7 +62,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Bug Bounty",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://t.me/HopiumSwapExchange",
       },
       {
         label: "Audits",
@@ -70,7 +70,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Careers",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://t.me/HopiumSwapExchange",
       },
     ],
   },
@@ -171,7 +171,7 @@ export const socials = [
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://www.s0cialhub.com/HopiumSwapExchange",
+    href: "https://t.me/HopiumSwapExchange",
   },
 ];
 
