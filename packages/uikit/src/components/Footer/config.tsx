@@ -8,7 +8,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Blog",
@@ -16,18 +16,18 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Community",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
-        label: "CAKE",
-        href: "https://docs.pancakeswap.finance/tokenomics/cake",
+        label: "HOPE",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "—",
       },
       {
         label: "Online Store",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
         isHighlighted: true,
       },
     ],
@@ -37,15 +37,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://t.me/HopiumSwapExchange",
+        href: "Support https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Troubleshooting",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Guides",
-        href: "https://twitter.com/HopiumSwap",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Bug Bounty",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
       {
         label: "Audits",
@@ -70,7 +70,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Careers",
-        href: "https://t.me/HopiumSwapExchange",
+        href: "https://www.s0cialhub.com/HopiumSwapExchange",
       },
     ],
   },
@@ -156,7 +156,7 @@ export const socials = [
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "https://discord.gg/qARSZRXYNR",
+    href: "https://www.s0cialhub.com/HopiumSwapExchange",
   },
   {
     label: "Github",
@@ -171,7 +171,7 @@ export const socials = [
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://t.me/HopiumSwapExchange",
+    href: "https://www.s0cialhub.com/HopiumSwapExchange",
   },
 ];
 
