@@ -72,7 +72,7 @@ const Menu: React.FC<NavProps> = ({
   toggleTheme,
   currentLang,
   setLang,
-  cakePriceUsd,
+  hopePriceUsd,
   links,
   subLinks,
   footerLinks,
@@ -138,7 +138,7 @@ const Menu: React.FC<NavProps> = ({
             <Flex alignItems="center" height="100%">
               {!isMobile && !isMd && (
                 <Box mr="12px">
-                  <CakePrice showSkeleton={false} cakePriceUsd={cakePriceUsd} />
+                  <HopePrice showSkeleton={false} hopePriceUsd={hopePriceUsd} />
                 </Box>
               )}
               <Box mt="4px">
@@ -179,8 +179,8 @@ const Menu: React.FC<NavProps> = ({
               langs={langs}
               setLang={setLang}
               currentLang={currentLang}
-              cakePriceUsd={cakePriceUsd}
-              buyCakeLabel={buyCakeLabel}
+              hopePriceUsd={hopePriceUsd}
+              buyHopeLabel={buyHopeLabel}
               mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
             />
           </Inner>
