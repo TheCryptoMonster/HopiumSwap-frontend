@@ -14,7 +14,7 @@ import {
 import { FooterProps } from "./types";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import LangSelector from "../LangSelector/LangSelector";
-import CakePrice from "../HopePrice/HopePrice";
+import HopePrice from "../HopePrice/HopePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
