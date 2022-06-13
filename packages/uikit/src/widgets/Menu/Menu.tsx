@@ -72,14 +72,14 @@ const Menu: React.FC<NavProps> = ({
   toggleTheme,
   currentLang,
   setLang,
-  hopePriceUsd,
+  HopePriceUsd,
   links,
   subLinks,
   footerLinks,
   activeItem,
   activeSubItem,
   langs,
-  buyCakeLabel,
+  buyHopeLabel,
   children,
 }) => {
   const { isMobile, isMd } = useMatchBreakpoints();
