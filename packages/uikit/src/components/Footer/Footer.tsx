@@ -96,7 +96,7 @@ const MenuItem: React.FC<FooterProps> = ({
               scale="sm"
               endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
             >
-              {buyHOPELabel}
+              {buyHopeLabel}
             </Button>
           </Flex>
         </StyledToolsContainer>
