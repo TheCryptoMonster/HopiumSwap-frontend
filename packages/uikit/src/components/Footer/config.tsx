@@ -171,7 +171,7 @@ export const socials = [
   {
     label: "Medium",
     icon: MediumIcon,
-    href: "https://discord.gg/qARSZRXYNR",
+    href: "https://www.s0cialhub.com/HopiumSwapExchange",
   },
 ];
 
