@@ -25,7 +25,7 @@ const PriceLink = styled.a`
 `;
 
 const HopePrice: React.FC<Props> = ({ hopePriceUsd, color = "textSubtle", showSkeleton = true }) => {
-  return HopePriceUsd ? (
+  return hopePriceUsd ? (
     <PriceLink
       href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
       target="_blank"
