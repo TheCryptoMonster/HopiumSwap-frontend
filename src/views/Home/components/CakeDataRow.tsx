@@ -79,8 +79,8 @@ const CakeDataRow = () => {
       refreshInterval: SLOW_INTERVAL,
     },
   )
-  const cakePriceBusd = usePriceCakeBusd()
-  const mcap = cakePriceBusd.times(cakeSupply)
+  const hopePriceBusd = usePriceCakeBusd()
+  const mcap = hopePriceBusd.times(cakeSupply)
   const mcapString = formatLocalisedCompactNumber(mcap.toNumber())
 
   useEffect(() => {

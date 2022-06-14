@@ -40,11 +40,11 @@ const GridCell = styled(Flex)<{ isTopPosition: boolean }>`
 
 interface LeaderboardRowProps {
   bidder: Bidder
-  cakePriceBusd: BigNumber
+  hopePriceBusd: BigNumber
   isMobile: boolean
 }
 
-const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, isMobile }) => {
+const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, hopePriceBusd, isMobile }) => {
   const { t } = useTranslation()
   const { isTopPosition, position, samePositionAsAbove, farmName, tokenName, amount, projectSite, lpAddress, account } =
     bidder
@@ -75,9 +75,9 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
           <Text bold textTransform="uppercase" width="100%" textAlign="right">
             {getBalanceNumber(amount).toLocaleString()}
           </Text>
-          {cakePriceBusd.gt(0) ? (
+          {hopePriceBusd.gt(0) ? (
             <Text fontSize="12px" color="textSubtle" textAlign="right">
-              ~${getBalanceNumber(amount.times(cakePriceBusd)).toLocaleString('en', { maximumFractionDigits: 0 })}
+              ~${getBalanceNumber(amount.times(hopePriceBusd)).toLocaleString('en', { maximumFractionDigits: 0 })}
             </Text>
           ) : (
             <Flex justifyContent="flex-end">
@@ -111,7 +111,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ bidder, cakePriceBusd, 
 
 const AuctionLeaderboardTable: React.FC<{ bidders: Bidder[]; noBidsText: string }> = ({ bidders, noBidsText }) => {
   const [visibleBidders, setVisibleBidders] = useState(10)
-  const cakePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceCakeBusd()
   const { t } = useTranslation()
 
   const { isMobile } = useMatchBreakpoints()
@@ -151,7 +151,7 @@ const AuctionLeaderboardTable: React.FC<{ bidders: Bidder[]; noBidsText: string 
         <Box />
         {/* Rows */}
         {bidders.slice(0, visibleBidders).map((bidder) => (
-          <LeaderboardRow key={bidder.account} bidder={bidder} cakePriceBusd={cakePriceBusd} isMobile={isMobile} />
+          <LeaderboardRow key={bidder.account} bidder={bidder} hopePriceBusd={hopePriceBusd} isMobile={isMobile} />
         ))}
       </LeaderboardContainer>
       <Flex mt="16px" px="24px" flexDirection="column" justifyContent="center" alignItems="center">

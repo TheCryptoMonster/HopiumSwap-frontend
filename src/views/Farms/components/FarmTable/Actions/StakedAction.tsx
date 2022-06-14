@@ -58,7 +58,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
   const { onUnstake } = useUnstakeFarms(pid)
   const router = useRouter()
   const lpPrice = useLpTokenPrice(lpSymbol)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
 
   const isApproved = account && allowance && allowance.isGreaterThan(0)
 
@@ -111,7 +111,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
       tokenName={lpSymbol}
       multiplier={multiplier}
       addLiquidityUrl={addLiquidityUrl}
-      cakePrice={cakePrice}
+      hopePrice={hopePrice}
     />,
   )
   const [onPresentWithdraw] = useModal(

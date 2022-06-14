@@ -8,7 +8,7 @@ import { useWeb3React } from '@web3-react/core'
 const FarmsHistoryPage = () => {
   const { account } = useWeb3React()
   const { chosenFarmsMemoized } = useContext(FarmsContext)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
 
   return (
     <>
@@ -17,7 +17,7 @@ const FarmsHistoryPage = () => {
           key={farm.pid}
           farm={farm}
           displayApr={getDisplayApr(farm.apr, farm.lpRewardsApr)}
-          cakePrice={cakePrice}
+          hopePrice={hopePrice}
           account={account}
           removed
         />

@@ -49,7 +49,7 @@ const StakeButton: React.FC<StackedActionProps> = ({
   const { onStake } = useStakeFarms(pid)
   const { onUnstake } = useUnstakeFarms(pid)
   const lpPrice = useLpTokenPrice(lpSymbol)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
 
   const isApproved = account && allowance && allowance.isGreaterThan(0)
 
@@ -102,7 +102,7 @@ const StakeButton: React.FC<StackedActionProps> = ({
       tokenName={lpSymbol}
       multiplier={multiplier}
       addLiquidityUrl={addLiquidityUrl}
-      cakePrice={cakePrice}
+      hopePrice={hopePrice}
     />,
   )
   const [onPresentWithdraw] = useModal(

@@ -15,7 +15,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
   const { data: farms, regularCakePerBlock } = useFarms()
   const [fetchStatus, setFetchStatus] = useState(FetchStatus.Idle)
   const [topFarms, setTopFarms] = useState<FarmWithStakedValue[]>([null, null, null, null, null])
-  const cakePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceCakeBusd()
 
   useEffect(() => {
     const fetchFarmData = async () => {
@@ -49,7 +49,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
         const totalLiquidity = farm.lpTotalInQuoteToken.times(farm.quoteTokenPriceBusd)
         const { cakeRewardsApr, lpRewardsApr } = getFarmApr(
           farm.poolWeight,
-          cakePriceBusd,
+          hopePriceBusd,
           totalLiquidity,
           farm.lpAddresses[ChainId.MAINNET],
           regularCakePerBlock,
@@ -64,7 +64,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
     if (fetchStatus === FetchStatus.Fetched && !topFarms[0]) {
       getTopFarmsByApr(farms)
     }
-  }, [setTopFarms, farms, fetchStatus, cakePriceBusd, topFarms, regularCakePerBlock])
+  }, [setTopFarms, farms, fetchStatus, hopePriceBusd, topFarms, regularCakePerBlock])
 
   return { topFarms }
 }

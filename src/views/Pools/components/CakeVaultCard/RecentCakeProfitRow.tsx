@@ -14,13 +14,13 @@ const RecentCakeProfitCountdownRow = ({ pool }: { pool: DeserializedPool }) => {
     pricePerFullShare,
     userData: { cakeAtLastUserAction, userShares, currentOverdueFee, currentPerformanceFee },
   } = useVaultPoolByKey(pool.vaultKey)
-  const cakePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceCakeBusd()
   const { hasAutoEarnings, autoCakeToDisplay } = getCakeVaultEarnings(
     account,
     cakeAtLastUserAction,
     userShares,
     pricePerFullShare,
-    cakePriceBusd.toNumber(),
+    hopePriceBusd.toNumber(),
     currentPerformanceFee.plus(currentOverdueFee),
   )
 

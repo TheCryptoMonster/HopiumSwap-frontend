@@ -23,7 +23,7 @@ const RewardBracketDetail: React.FC<RewardBracketDetailProps> = ({
   isLoading,
 }) => {
   const { t } = useTranslation()
-  const cakePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceCakeBusd()
 
   const getRewardText = () => {
     const numberMatch = rewardBracket + 1
@@ -60,7 +60,7 @@ const RewardBracketDetail: React.FC<RewardBracketDetailProps> = ({
             fontSize="12px"
             color="textSubtle"
             prefix="~$"
-            value={getBalanceNumber(cakeAmount.times(cakePriceBusd))}
+            value={getBalanceNumber(cakeAmount.times(hopePriceBusd))}
             decimals={0}
           />
         )}

@@ -94,9 +94,9 @@ const VaultStakeModal: React.FC<VaultStakeModalProps> = ({
   const [percent, setPercent] = useState(0)
   const [showRoiCalculator, setShowRoiCalculator] = useState(false)
   const { hasUnstakingFee } = useWithdrawalFeeTimer(parseInt(lastDepositedTime, 10), userShares)
-  const cakePriceBusd = usePriceCakeBusd()
-  const usdValueStaked = new BigNumber(stakeAmount).times(cakePriceBusd)
-  const formattedUsdValueStaked = cakePriceBusd.gt(0) && stakeAmount ? formatNumber(usdValueStaked.toNumber()) : ''
+  const hopePriceBusd = usePriceCakeBusd()
+  const usdValueStaked = new BigNumber(stakeAmount).times(hopePriceBusd)
+  const formattedUsdValueStaked = hopePriceBusd.gt(0) && stakeAmount ? formatNumber(usdValueStaked.toNumber()) : ''
 
   const { flexibleApy } = useVaultApy()
 
@@ -226,7 +226,7 @@ const VaultStakeModal: React.FC<VaultStakeModalProps> = ({
       <BalanceInput
         value={stakeAmount}
         onUserInput={handleStakeInputChange}
-        currencyValue={cakePriceBusd.gt(0) && `~${formattedUsdValueStaked || 0} USD`}
+        currencyValue={hopePriceBusd.gt(0) && `~${formattedUsdValueStaked || 0} USD`}
         decimals={stakingToken.decimals}
       />
       <Text mt="8px" ml="auto" color="textSubtle" fontSize="12px" mb="8px">

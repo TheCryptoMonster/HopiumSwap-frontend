@@ -18,7 +18,7 @@ const OldFarmStep1: React.FC = () => {
   const { account } = useWeb3React()
   const { data: farmsLP, userDataLoaded, regularCakePerBlock } = useFarms()
   const { data: farmsV1LP } = useFarmsV1()
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
 
   usePollFarmsWithUserData()
 
@@ -52,7 +52,7 @@ const OldFarmStep1: React.FC = () => {
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteTokenPriceBusd)
         const { cakeRewardsApr, lpRewardsApr } = getFarmApr(
           new BigNumber(farm.poolWeight),
-          cakePrice,
+          hopePrice,
           totalLiquidity,
           farm.lpAddresses[ChainId.MAINNET],
           regularCakePerBlock,
@@ -62,7 +62,7 @@ const OldFarmStep1: React.FC = () => {
 
       return farmsToDisplayWithAPR
     },
-    [cakePrice, regularCakePerBlock],
+    [hopePrice, regularCakePerBlock],
   )
 
   const chosenFarmsMemoized = useMemo(() => {
@@ -84,7 +84,7 @@ const OldFarmStep1: React.FC = () => {
         lpSymbol: farm.lpSymbol,
         tokenAddress,
         quoteTokenAddress,
-        cakePrice,
+        hopePrice,
         originalValue: farm.apr,
       },
       farm: {

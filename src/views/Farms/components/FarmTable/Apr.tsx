@@ -13,7 +13,7 @@ export interface AprProps {
   lpSymbol: string
   tokenAddress?: string
   quoteTokenAddress?: string
-  cakePrice: BigNumber
+  hopePrice: BigNumber
   originalValue: number
   hideButton?: boolean
 }
@@ -48,7 +48,7 @@ const Apr: React.FC<AprProps> = ({
   multiplier,
   tokenAddress,
   quoteTokenAddress,
-  cakePrice,
+  hopePrice,
   originalValue,
   hideButton = false,
 }) => {
@@ -64,7 +64,7 @@ const Apr: React.FC<AprProps> = ({
           lpSymbol={lpSymbol}
           lpLabel={lpLabel}
           multiplier={multiplier}
-          cakePrice={cakePrice}
+          hopePrice={hopePrice}
           apr={originalValue}
           displayApr={value}
           addLiquidityUrl={addLiquidityUrl}

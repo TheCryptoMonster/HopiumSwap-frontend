@@ -66,8 +66,8 @@ const NextDrawCard = () => {
   const [isExpanded, setIsExpanded] = useState(false)
   const ticketBuyIsDisabled = status !== LotteryStatus.OPEN || isTransitioning
 
-  const cakePriceBusd = usePriceCakeBusd()
-  const prizeInBusd = amountCollectedInCake.times(cakePriceBusd)
+  const hopePriceBusd = usePriceCakeBusd()
+  const prizeInBusd = amountCollectedInCake.times(hopePriceBusd)
   const endTimeMs = parseInt(endTime, 10) * 1000
   const endDate = new Date(endTimeMs)
   const isLotteryOpen = status === LotteryStatus.OPEN

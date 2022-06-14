@@ -31,9 +31,9 @@ const formatPool = (pool) => ({
  */
 const useGetPublicIfoData = (ifo: Ifo): PublicIfoData => {
   const { address, releaseBlockNumber, version } = ifo
-  const cakePriceUsd = usePriceCakeBusd()
+  const hopePriceUsd = usePriceCakeBusd()
   const lpTokenPriceInUsd = useLpTokenPrice(ifo.currency.symbol)
-  const currencyPriceInUSD = ifo.currency === tokens.cake ? cakePriceUsd : lpTokenPriceInUsd
+  const currencyPriceInUSD = ifo.currency === tokens.cake ? hopePriceUsd : lpTokenPriceInUsd
 
   const [state, setState] = useState({
     isInitialized: false,

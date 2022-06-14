@@ -26,7 +26,7 @@ const LotteryCardContent = () => {
   const { t } = useTranslation()
   const { observerRef, isIntersecting } = useIntersectionObserver()
   const [loadData, setLoadData] = useState(false)
-  const cakePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceCakeBusd()
   const { data: lotteryId = null } = useSWRImmutable(loadData ? ['lottery', 'currentLotteryId'] : null, async () => {
     const { currentLotteryId } = await fetchCurrentLotteryIdAndMaxBuy()
     if (currentLotteryId) {
@@ -48,10 +48,10 @@ const LotteryCardContent = () => {
     },
   )
 
-  const cakePrizesText = t('%cakePrizeInUsd% in CAKE prizes this round', { cakePrizeInUsd: cakePriceBusd.toString() })
-  const [pretext, prizesThisRound] = cakePrizesText.split(cakePriceBusd.toString())
+  const cakePrizesText = t('%cakePrizeInUsd% in CAKE prizes this round', { cakePrizeInUsd: hopePriceBusd.toString() })
+  const [pretext, prizesThisRound] = cakePrizesText.split(hopePriceBusd.toString())
 
-  const currentLotteryPrize = currentLotteryPrizeInCake ? cakePriceBusd.times(currentLotteryPrizeInCake) : null
+  const currentLotteryPrize = currentLotteryPrizeInCake ? hopePriceBusd.times(currentLotteryPrizeInCake) : null
 
   useEffect(() => {
     if (isIntersecting) {

@@ -47,7 +47,7 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({
   const { onStake } = useStakeFarms(pid)
   const { onUnstake } = useUnstakeFarms(pid)
   const { tokenBalance, stakedBalance } = useFarmUser(pid)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
   const router = useRouter()
   const dispatch = useAppDispatch()
   const { account } = useWeb3React()
@@ -97,7 +97,7 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({
       apr={apr}
       displayApr={displayApr}
       addLiquidityUrl={addLiquidityUrl}
-      cakePrice={cakePrice}
+      hopePrice={hopePrice}
     />,
   )
   const [onPresentWithdraw] = useModal(

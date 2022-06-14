@@ -24,13 +24,13 @@ const Staked: React.FC<StakedProps> = ({ earned, farm }) => {
   const { t } = useTranslation()
   const { earnings } = earned
   const earningsBigNumber = new BigNumber(earnings)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
   let earningsBusd = 0
   let displayBalance = earnings.toLocaleString()
 
   // If user didn't connect wallet default balance will be 0
   if (!earningsBigNumber.isZero()) {
-    earningsBusd = earningsBigNumber.multipliedBy(cakePrice).toNumber()
+    earningsBusd = earningsBigNumber.multipliedBy(hopePrice).toNumber()
     displayBalance = earningsBigNumber.toFixed(3, BigNumber.ROUND_DOWN)
   }
 

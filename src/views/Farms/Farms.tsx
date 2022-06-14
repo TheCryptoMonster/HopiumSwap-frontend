@@ -131,7 +131,7 @@ const Farms: React.FC = ({ children }) => {
   const { pathname } = useRouter()
   const { t } = useTranslation()
   const { data: farmsLP, userDataLoaded, poolLength, regularCakePerBlock } = useFarms()
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
   const [query, setQuery] = useState('')
   const [viewMode, setViewMode] = useUserFarmsViewMode()
   const { account } = useWeb3React()
@@ -179,7 +179,7 @@ const Farms: React.FC = ({ children }) => {
         const { cakeRewardsApr, lpRewardsApr } = isActive
           ? getFarmApr(
               new BigNumber(farm.poolWeight),
-              cakePrice,
+              hopePrice,
               totalLiquidity,
               farm.lpAddresses[ChainId.MAINNET],
               regularCakePerBlock,
@@ -197,7 +197,7 @@ const Farms: React.FC = ({ children }) => {
       }
       return farmsToDisplayWithAPR
     },
-    [cakePrice, query, isActive, regularCakePerBlock],
+    [hopePrice, query, isActive, regularCakePerBlock],
   )
 
   const handleChangeQuery = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -289,7 +289,7 @@ const Farms: React.FC = ({ children }) => {
         lpSymbol: farm.lpSymbol,
         tokenAddress,
         quoteTokenAddress,
-        cakePrice,
+        hopePrice,
         originalValue: farm.apr,
       },
       farm: {

@@ -24,9 +24,9 @@ const HasSharesActions: React.FC<HasStakeActionProps> = ({ pool, stakingTokenBal
 
   const { stakingToken } = pool
 
-  const cakePriceBusd = usePriceCakeBusd()
-  const stakedDollarValue = cakePriceBusd.gt(0)
-    ? getBalanceNumber(cakeAsBigNumber.multipliedBy(cakePriceBusd), stakingToken.decimals)
+  const hopePriceBusd = usePriceCakeBusd()
+  const stakedDollarValue = hopePriceBusd.gt(0)
+    ? getBalanceNumber(cakeAsBigNumber.multipliedBy(hopePriceBusd), stakingToken.decimals)
     : 0
 
   const [onPresentTokenRequired] = useModal(<NotEnoughTokensModal tokenSymbol={stakingToken.symbol} />)
@@ -46,7 +46,7 @@ const HasSharesActions: React.FC<HasStakeActionProps> = ({ pool, stakingTokenBal
         <Flex flexDirection="column">
           <Balance fontSize="20px" bold value={cakeAsNumberBalance} decimals={5} />
           <Text as={Flex} fontSize="12px" color="textSubtle" flexWrap="wrap">
-            {cakePriceBusd.gt(0) ? (
+            {hopePriceBusd.gt(0) ? (
               <Balance
                 value={stakedDollarValue}
                 fontSize="12px"

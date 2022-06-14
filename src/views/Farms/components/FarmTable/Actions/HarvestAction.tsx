@@ -24,7 +24,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({ pid, userD
   const { toastSuccess } = useToast()
   const { fetchWithCatchTxError, loading: pendingTx } = useCatchTxError()
   const earningsBigNumber = new BigNumber(userData.earnings)
-  const cakePrice = usePriceCakeBusd()
+  const hopePrice = usePriceCakeBusd()
   let earnings = BIG_ZERO
   let earningsBusd = 0
   let displayBalance = userDataReady ? earnings.toLocaleString() : <Skeleton width={60} />
@@ -32,7 +32,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({ pid, userD
   // If user didn't connect wallet default balance will be 0
   if (!earningsBigNumber.isZero()) {
     earnings = getBalanceAmount(earningsBigNumber)
-    earningsBusd = earnings.multipliedBy(cakePrice).toNumber()
+    earningsBusd = earnings.multipliedBy(hopePrice).toNumber()
     displayBalance = earnings.toFixed(3, BigNumber.ROUND_DOWN)
   }
 
