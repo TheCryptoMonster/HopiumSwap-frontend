@@ -87,7 +87,7 @@ const MenuItem: React.FC<FooterProps> = ({
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
-              <HopePrice hopePriceUsd={HopePriceUsd} color={darkColors.textSubtle as keyof Colors} />
+              <HopePrice hopePriceUsd={hopePriceUsd} color={darkColors.textSubtle as keyof Colors} />
             </Box>
             <Button
               as="a"
