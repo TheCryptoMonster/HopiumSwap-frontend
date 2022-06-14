@@ -2,13 +2,13 @@ import { useContext } from 'react'
 import { FarmsPageLayout, FarmsContext } from 'views/Farms'
 import FarmCard from 'views/Farms/components/FarmCard/FarmCard'
 import { getDisplayApr } from 'views/Farms/Farms'
-import { usePiceHopeBusd } from 'state/farms/hooks'
+import { usePriceHopeBusd } from 'state/farms/hooks'
 import { useWeb3React } from '@web3-react/core'
 
 const FarmsPage = () => {
   const { account } = useWeb3React()
   const { chosenFarmsMemoized } = useContext(FarmsContext)
-  const hopePrice = usePiceHopeBusd()
+  const hopePrice = usePriceHopeBusd()
 
   return (
     <>
