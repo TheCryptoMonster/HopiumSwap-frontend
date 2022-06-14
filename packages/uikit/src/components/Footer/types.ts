@@ -11,7 +11,7 @@ export type FooterProps = {
   buyHopeLabel: string;
   isDark: boolean;
   toggleTheme: (isDark: boolean) => void;
-  HopePriceUsd?: number;
+  hopePriceUsd?: number;
   currentLang: string;
   langs: Language[];
   setLang: (lang: Language) => void;
