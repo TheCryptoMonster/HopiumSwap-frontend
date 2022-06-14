@@ -9,7 +9,7 @@ import useCatchTxError from 'hooks/useCatchTxError'
 
 import { useAppDispatch } from 'state'
 import { fetchFarmUserDataAsync } from 'state/farms'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { usePriceHopeBusd } from 'state/farms/hooks'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { getBalanceAmount } from 'utils/formatBalance'
 import useHarvestFarm from '../../hooks/useHarvestFarm'
@@ -25,7 +25,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const { fetchWithCatchTxError, loading: pendingTx } = useCatchTxError()
   const { t } = useTranslation()
   const { onReward } = useHarvestFarm(pid)
-  const hopePrice = usePriceCakeBusd()
+  const hopePrice = usePriceHopeBusd()
   const dispatch = useAppDispatch()
   const rawEarningsBalance = account ? getBalanceAmount(earnings) : BIG_ZERO
   const displayBalance = rawEarningsBalance.toFixed(3, BigNumber.ROUND_DOWN)

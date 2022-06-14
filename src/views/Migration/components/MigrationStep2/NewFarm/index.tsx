@@ -4,7 +4,7 @@ import { useWeb3React } from '@web3-react/core'
 import { getFarmApr } from 'utils/apr'
 import { RowType } from '@pancakeswap/uikit'
 import { ChainId } from '@pancakeswap/sdk'
-import { useFarms, usePriceCakeBusd, usePollFarmsWithUserData } from 'state/farms/hooks'
+import { useFarms, usePriceHopeBusd, usePollFarmsWithUserData } from 'state/farms/hooks'
 import { useFarmsV1 } from 'state/farmsV1/hooks'
 import { DeserializedFarm } from 'state/types'
 import { getBalanceNumber } from 'utils/formatBalance'
@@ -18,7 +18,7 @@ const OldFarmStep1: React.FC = () => {
   const { account } = useWeb3React()
   const { data: farmsLP, userDataLoaded, regularCakePerBlock } = useFarms()
   const { data: farmsV1LP } = useFarmsV1()
-  const hopePrice = usePriceCakeBusd()
+  const hopePrice = usePriceHopeBusd()
 
   usePollFarmsWithUserData()
 

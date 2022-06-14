@@ -8,7 +8,7 @@ import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'
 import { fetchFarmUserDataAsync } from 'state/farms'
 import { useRouter } from 'next/router'
-import { useLpTokenPrice, useFarmUser, usePriceCakeBusd } from 'state/farms/hooks'
+import { useLpTokenPrice, useFarmUser, usePriceHopeBusd } from 'state/farms/hooks'
 import DepositModal from '../DepositModal'
 import WithdrawModal from '../WithdrawModal'
 import useUnstakeFarms from '../../hooks/useUnstakeFarms'
@@ -47,7 +47,7 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({
   const { onStake } = useStakeFarms(pid)
   const { onUnstake } = useUnstakeFarms(pid)
   const { tokenBalance, stakedBalance } = useFarmUser(pid)
-  const hopePrice = usePriceCakeBusd()
+  const hopePrice = usePriceHopeBusd()
   const router = useRouter()
   const dispatch = useAppDispatch()
   const { account } = useWeb3React()

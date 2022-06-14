@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ChainId } from '@pancakeswap/sdk'
-import { useFarms, usePriceCakeBusd } from 'state/farms/hooks'
+import { useFarms, usePriceHopeBusd } from 'state/farms/hooks'
 import { useAppDispatch } from 'state'
 import farmsConfig from 'config/constants/farms'
 import { fetchFarmsPublicDataAsync } from 'state/farms'
@@ -15,7 +15,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
   const { data: farms, regularCakePerBlock } = useFarms()
   const [fetchStatus, setFetchStatus] = useState(FetchStatus.Idle)
   const [topFarms, setTopFarms] = useState<FarmWithStakedValue[]>([null, null, null, null, null])
-  const hopePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceHopeBusd()
 
   useEffect(() => {
     const fetchFarmData = async () => {

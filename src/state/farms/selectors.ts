@@ -63,7 +63,7 @@ export const makeUserFarmFromPidSelector = (pid: number) =>
     }
   })
 
-export const priceCakeFromPidSelector = createSelector([selectCakeFarm], (cakeBnbFarm) => {
+export const PriceHopeFromPidSelector = createSelector([selectCakeFarm], (cakeBnbFarm) => {
   const deserializedCakeBnbFarm = deserializeFarm(cakeBnbFarm)
   const hopePriceBusdAsString = deserializedCakeBnbFarm.tokenPriceBusd
   return new BigNumber(hopePriceBusdAsString)

@@ -19,7 +19,7 @@ import { useWeb3React } from '@web3-react/core'
 import { useAppDispatch } from 'state'
 
 import { BIG_TEN } from 'utils/bigNumber'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { usePriceHopeBusd } from 'state/farms/hooks'
 import { useVaultPoolByKey } from 'state/pools/hooks'
 import { useVaultApy } from 'hooks/useVaultApy'
 
@@ -94,7 +94,7 @@ const VaultStakeModal: React.FC<VaultStakeModalProps> = ({
   const [percent, setPercent] = useState(0)
   const [showRoiCalculator, setShowRoiCalculator] = useState(false)
   const { hasUnstakingFee } = useWithdrawalFeeTimer(parseInt(lastDepositedTime, 10), userShares)
-  const hopePriceBusd = usePriceCakeBusd()
+  const hopePriceBusd = usePriceHopeBusd()
   const usdValueStaked = new BigNumber(stakeAmount).times(hopePriceBusd)
   const formattedUsdValueStaked = hopePriceBusd.gt(0) && stakeAmount ? formatNumber(usdValueStaked.toNumber()) : ''
 

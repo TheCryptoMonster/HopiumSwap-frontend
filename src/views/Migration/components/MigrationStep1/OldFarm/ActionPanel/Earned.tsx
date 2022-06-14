@@ -5,7 +5,7 @@ import { useTranslation } from 'contexts/Localization'
 import { Flex, Heading, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import Balance from 'components/Balance'
 import { ActionContainer, ActionContent, ActionTitles } from 'views/Pools/components/PoolsTable/ActionPanel/styles'
-import { usePriceCakeBusd } from 'state/farmsV1/hooks'
+import { usePriceHopeBusd } from 'state/farmsV1/hooks'
 import { EarnedProps } from '../Cells/Earned'
 
 const Container = styled(ActionContainer)`
@@ -18,7 +18,7 @@ const Earned: React.FC<EarnedProps> = ({ earnings }) => {
   const { isMobile } = useMatchBreakpoints()
 
   const earningsBigNumber = new BigNumber(earnings)
-  const hopePrice = usePriceCakeBusd()
+  const hopePrice = usePriceHopeBusd()
   let earningsBusd = 0
   let displayBalance = earnings.toLocaleString()
 

@@ -5,7 +5,7 @@ import { useTranslation } from 'contexts/Localization'
 import { Heading, Text } from '@pancakeswap/uikit'
 import Balance from 'components/Balance'
 import { ActionContainer, ActionContent, ActionTitles } from 'views/Pools/components/PoolsTable/ActionPanel/styles'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { usePriceHopeBusd } from 'state/farms/hooks'
 import { EarnedProps } from 'views/Migration/components/MigrationStep1/OldFarm/Cells/Earned'
 import { FarmProps } from 'views/Migration/components/MigrationStep1/OldFarm/Cells/Farm'
 import StakeButton from '../StakeButton'
@@ -24,7 +24,7 @@ const Staked: React.FC<StakedProps> = ({ earned, farm }) => {
   const { t } = useTranslation()
   const { earnings } = earned
   const earningsBigNumber = new BigNumber(earnings)
-  const hopePrice = usePriceCakeBusd()
+  const hopePrice = usePriceHopeBusd()
   let earningsBusd = 0
   let displayBalance = earnings.toLocaleString()
 
