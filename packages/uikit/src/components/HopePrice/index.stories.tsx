@@ -4,7 +4,7 @@ import { Flex } from "../Box";
 
 export default {
   title: "Components/HopePrice",
-  component: CakePrice,
+  component: HopePrice,
 };
 
 const Template: React.FC<HopePriceProps> = ({ ...args }) => {
