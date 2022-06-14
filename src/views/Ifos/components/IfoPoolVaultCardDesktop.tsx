@@ -103,12 +103,12 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
           <Flex flexDirection="column">
             <Text mb="16px">
               {t(
-                'This is the old IFO CAKE pool. Check out the brand new CAKE pool to learn how to earn CAKE rewards with higher APY while enjoying other benefits.',
+                'This is the old IFO HOPE pool. Check out the brand new HOPE pool to learn how to earn HOPE rewards with higher APY while enjoying other benefits.',
               )}
             </Text>
             <Flex ml="-34px">
               <Button onClick={handleOnClick} width="100%">
-                {isShowMigrationButton ? t('Migrate') : t('Go to new CAKE pool')}
+                {isShowMigrationButton ? t('Migrate') : t('Go to new HOPE pool')}
               </Button>
             </Flex>
           </Flex>
@@ -133,7 +133,7 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
         </Box>
         <Box mt="24px">
           <Flex alignItems="center" justifyContent="space-between">
-            <Text fontSize="14px">{`${t('Recent CAKE profit')}:`}</Text>
+            <Text fontSize="14px">{`${t('Recent HOPE profit')}:`}</Text>
             <Balance
               bold
               fontSize="14px"
