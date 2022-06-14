@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'HopiumSwap',
   description:
-    'The newest AMM on Polygon network! Earn HOPE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by HopiumSwap), NFTs, and more, on a platform you can trust.',
+    'The newest AMM on Polygon network! Earn HOPE through yield farming or win it in the Lottery, then stake it in Hopium Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by HopiumSwap), NFTs, and more, on a platform you can trust.',
   image: 'https://pbs.twimg.com/profile_banners/1515427411931762691/1650296460/600x200',
 }
 
