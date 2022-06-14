@@ -17,5 +17,5 @@ const Template: React.FC<HopePriceProps> = ({ ...args }) => {
 
 export const Default = Template.bind({});
 Default.args = {
-  cakePriceUsd: 20.0,
+  hopePriceUsd: 20.0,
 };
